@@ -1,0 +1,13 @@
+section {
+  display: flex;
+}
+
+side-bar {
+  width: 30%;
+  border: 2px solid black;
+}
+
+main {
+  width: 70%;
+  border: 2px solid blue;
+}
