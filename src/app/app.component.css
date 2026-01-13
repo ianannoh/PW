@@ -3,11 +3,33 @@ section {
 }
 
 side-bar {
-  width: 30%;
-  border: 2px solid black;
+  width: 23%;
 }
 
 main {
-  width: 70%;
-  border: 2px solid blue;
+  width: 77%;
+  box-sizing: border-box;
+  padding: 5rem 2rem;
+}
+
+
+
+@media (max-width: 736px) {
+  section {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+  }
+}
+
+@media (min-width: 737px) and (max-width: 1080px) {
+  section {
+    flex-direction: column;
+  }
+
+  main {
+    width: 100%;
+  }
 }
