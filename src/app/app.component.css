@@ -10,6 +10,8 @@ main {
   width: 77%;
   box-sizing: border-box;
   padding: 5rem 2rem;
+  background-color: rgba(128, 128, 128, 0.05);
+  min-height: 100vh;
 }
 
 
