@@ -28,26 +28,29 @@ ul {
   padding: 3rem 3rem 7rem 0;
 
   li {
+    width: 100%;
+  }
+
+  a {
+    width: 100%;
     border-bottom: 2px solid gray;
     padding: 1rem;
+    transform: translateX(0);
+    transition: 0.5s;
   }
 
   .intro {
     border-top: 2px solid gray;
   }
 
-  li:hover {
+  a:hover {
     cursor: pointer;
-    background-color: rgba(204, 201, 201, 0.3);
-    transition: 0.35s;
-    position: relative;
-    right: -2rem;
+    transform: translateX(2rem);
   }
 
   .routerLinkActive {
     background-color: rgba(204, 201, 201, 0.3);
-    position: relative;
-    right: -2rem;
+    transform: translateX(2rem);
   }
 
 }
@@ -116,18 +119,18 @@ section {
     padding: 0;
     margin: 0;
 
-    li {
+    a {
       border: 1px solid gray;
       margin-bottom: 0.5rem;
       border-radius: 5px;
     }
 
-    li:hover {
-      right: 0;
+    a:hover {
+      transform: translateX(0);
     }
 
     .routerLinkActive {
-      right: 0;
+      transform: translateX(0);
     }
   }
 
@@ -189,18 +192,18 @@ section {
     padding: 0;
     margin: 0;
 
-    li {
+    a {
       border: 1px solid gray;
       margin-bottom: 0.5rem;
       border-radius: 5px;
     }
 
-    li:hover {
-      right: 0;
+    a:hover {
+      transform: translateX(0);
     }
 
     .routerLinkActive {
-      right: 0;
+      transform: translateX(0);
     }
   }
 

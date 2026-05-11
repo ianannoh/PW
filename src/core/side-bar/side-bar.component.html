@@ -4,10 +4,10 @@
 <nav [class.show]="showSideBar">
   <div (click)="setSidebar()" class="bg"></div>
   <ul>
-    <li (click)="setSidebar()" class="intro" routerLink="/" routerLinkActive="routerLinkActive" [routerLinkActiveOptions]={exact:true}>About</li>
-    <li (click)="setSidebar()" routerLink="/projects" routerLinkActive="routerLinkActive">Projects</li>
-    <li (click)="setSidebar()" routerLink="/professional-skills" routerLinkActive="routerLinkActive">Professional skills</li>
-    <li (click)="setSidebar()" routerLink="/contact" routerLinkActive="routerLinkActive">Contact</li>
+    <li (click)="setSidebar()"><a class="intro" routerLink="/" routerLinkActive="routerLinkActive" [routerLinkActiveOptions]={exact:true}>About</a></li>
+    <li (click)="setSidebar()"><a routerLink="/projects" routerLinkActive="routerLinkActive">Projects</a></li>
+    <li (click)="setSidebar()"><a routerLink="/professional-skills" routerLinkActive="routerLinkActive">Professional skills</a></li>
+    <li (click)="setSidebar()"><a routerLink="/contact" routerLinkActive="routerLinkActive">Contact</a></li>
   </ul>
 </nav>
 

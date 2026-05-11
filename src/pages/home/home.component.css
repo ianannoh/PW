@@ -7,7 +7,7 @@ section {
 
 .box {
   transform: scale(1);
-  transition: transform 1s;
+  transition: transform 0.7s;
 
   .main {
     height: 15rem;
@@ -39,9 +39,8 @@ section {
 }
 
 .box:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   cursor: pointer;
-  transition: 1s;
 }
 
 
@@ -64,10 +63,6 @@ section {
       }
 
       .info {
-
-        h3 {
-          font-size: 0.8rem;
-        }
 
         p {
           font-size: 0.7rem;
@@ -101,14 +96,6 @@ section {
       /*  height: 3rem;*/
       /*  width: 3rem;*/
       /*}*/
-
-      .info {
-
-        h3 {
-          font-size: 1rem;
-        }
-
-      }
     }
   }
 }
