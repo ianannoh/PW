@@ -1,11 +1,9 @@
 import { Component } from '@angular/core';
-import {NgIf} from '@angular/common';
 import {RouterLink, RouterLinkActive} from '@angular/router';
 
 @Component({
   selector: 'side-bar',
   imports: [
-    NgIf,
     RouterLink,
     RouterLinkActive
   ],
