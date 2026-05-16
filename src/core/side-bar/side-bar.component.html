@@ -1,12 +1,14 @@
-<p (click)="setSidebar()" class="ham"> &#9776;</p>
+<p [class.hideHam]="showSideBar" (click)="setSidebar()" class="ham"> &#9776;</p>
+
 
 <nav [class.show]="showSideBar">
-    <ul>
-      <li>Introduction</li>
-      <li>Skills</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
+  <div (click)="setSidebar()" class="bg"></div>
+  <ul>
+    <li (click)="setSidebar()"><a class="intro" routerLink="/" routerLinkActive="routerLinkActive" [routerLinkActiveOptions]={exact:true}>About</a></li>
+    <li (click)="setSidebar()"><a routerLink="/projects" routerLinkActive="routerLinkActive">Projects</a></li>
+    <li (click)="setSidebar()"><a routerLink="/professional-skills" routerLinkActive="routerLinkActive">Professional skills</a></li>
+    <li (click)="setSidebar()"><a routerLink="/contact" routerLinkActive="routerLinkActive">Contact</a></li>
+  </ul>
 </nav>
 
 <section>

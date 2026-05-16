@@ -1,1 +1,16 @@
-<p>skills works!</p>
+<section>
+ <ng-container *ngFor="let s of skills">
+
+<!--   <a href="">-->
+     <div class="container">
+       <img [src]="s.img" alt="">
+
+       <div>
+         <p class="header">{{s.name}}</p>
+         <p>{{s.type}}</p>
+       </div>
+     </div>
+<!--   </a>-->
+
+ </ng-container>
+</section>
