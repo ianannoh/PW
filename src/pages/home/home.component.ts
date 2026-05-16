@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import {NgForOf} from '@angular/common';
+import {RouterLink} from '@angular/router';
 
 interface IProjects {
   img1: string;
@@ -12,13 +13,14 @@ interface IProjects {
 @Component({
   selector: 'app-home',
   imports: [
-    NgForOf
+    NgForOf,
+    RouterLink
   ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
 export class HomeComponent {
-  protected  projects: IProjects[] = [
+  protected  websiteProjects: IProjects[] = [
     {
       img1: "/assets/home/fr-bg.webp",
       img2: "/assets/home/FR-Logo.jpg",
@@ -33,7 +35,7 @@ export class HomeComponent {
       header: "Vandzilah Technology",
       date: "September, 2025",
       route: "https://vandzilahtechnologies.com/",
-      type: "Portfolio & CMS",
+      type: "Technology",
     },
     {
       img1: "/assets/home/daas-bg.webp",
@@ -43,29 +45,40 @@ export class HomeComponent {
       route: "https://daas.vandzilahtechnologies.com/",
       type: "Software-as-a-Service",
     },
-    // {
-    //   img1: "/assets/home/ggrs-bg.webp",
-    //   img2: "/assets/home/ggrs-logo.svg",
-    //   header: "Ghana Gun Registry Service (GGRS)",
-    //   date: "November, 2025",
-    //   route: "",
-    //   type: "Legal & Regulatory Tech",
-    // },
-    // {
-    //   img1: "/assets/home/vitals-bg.webp",
-    //   img2: "/assets/home/FR-Logo.jpg",
-    //   header: "Vitals First",
-    //   date: "December, 2025",
-    //   route: "",
-    //   type: "Health & Wellness Analytics",
-    // },
     {
       img1: "/assets/home/nurture-bg.webp",
       img2: "/assets/home/nurture-marketing-logo.jpeg",
-      header: "Vitals First",
-      date: "December, 2025",
+      header: "Nurture Marketing",
+      date: "March, 2026",
       route: "https://nurturemarketing.online/",
-      type: "Health & Wellness Analytics",
+      type: "Marketing & Business Development",
     },
   ];
+
+  protected systemProjects: IProjects[] = [
+    {
+      img1: "/assets/home/vitals-bg.webp",
+      img2: "/assets/home/vdt-logo.svg",
+      header: "Vandzilah Technology Website CMS",
+      date: "April, 2026",
+      route: "/projects/vdt-cms",
+      type: "CMS Platform",
+    },
+    {
+      img1: "/assets/home/ggrs-bg.webp",
+      img2: "/assets/home/ggrs-logo.svg",
+      header: "Ghana Gun Registry Service (GGRS)",
+      date: "November, 2025",
+      route: "/projects/ggrs",
+      type: "Legal & Regulatory Tech",
+    },
+    {
+      img1: "/assets/home/vitals-bg.webp",
+      img2: "/assets/home/FR-Logo.jpg",
+      header: "Vitals First",
+      date: "December, 2025",
+      route: "/projects/vitals-first",
+      type: "Health & Wellness Analytics",
+    },
+  ]
 }
