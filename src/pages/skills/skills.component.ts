@@ -29,7 +29,7 @@ export class SkillsComponent {
     {
       img: "/assets/skills/node-icon.png",
       name: "NodeJS",
-      type: "JavaScript Runtime Environment",
+      type: "JS Runtime Environment",
     },
     {
       img: "/assets/skills/express-icon.png",
