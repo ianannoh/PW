@@ -1,12 +1,12 @@
 /*Section one*/
 .section-one {
-  border: 2px solid gray;
+  border: 2px solid #D9D9D9;
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 1rem;
+  padding-right: 1rem;
   box-sizing: border-box;
-  border-radius: 20px;
+  border-radius: 22px;
 
   img {
     width: 15rem;
@@ -27,7 +27,7 @@
 
 /*Section two*/
 .section-two {
-  border: 2px solid gray;
+  border: 2px solid #D9D9D9;
   padding: 1rem;
   box-sizing: border-box;
   border-radius: 20px;
@@ -54,7 +54,7 @@
     width: 5rem;
     border-radius: 5px;
     object-fit: cover;
-    border: 1px solid gray;
+    border: 1px solid #D9D9D9;
     padding: 0.5rem;
     margin-right: 1rem;
     flex-shrink: 0;
@@ -81,7 +81,7 @@
 
   a {
     text-decoration: underline;
-    color: gray;
+    color: #D9D9D9;
     font-size: 1rem;
   }
 
@@ -95,7 +95,7 @@
 
 /*Section three*/
 .section-three {
-  border: 2px solid gray;
+  border: 2px solid #D9D9D9;
   padding: 1rem;
   box-sizing: border-box;
   border-radius: 20px;
@@ -152,7 +152,7 @@
       width: 100%;
       grid-template-columns: 1fr;
       margin-top: 1.2rem;
-      border-bottom: 1px solid gray;
+      border-bottom: 1px solid #D9D9D9;
 
       .mode {
         margin: 0.2rem 0;

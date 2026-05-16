@@ -1,14 +1,14 @@
 /*Hamburger*/
 .ham {
   position: fixed;
-  left: 1rem;
+  padding-left: 1rem;
   top: 0;
   font-size: 2rem;
   cursor: pointer;
   opacity: 0;
   visibility: hidden;
   z-index: 9;
-  background-color: rgba(128, 128, 128, 0.025);
+  background-color: #F5F5F5;
   width: 100%;
 }
 
@@ -23,7 +23,7 @@ nav {
 }
 
 ul {
-  border-right: 2px solid gray;
+  border-right: 2px solid #D9D9D9;
   list-style: none;
   padding: 3rem 3rem 7rem 0;
 
@@ -33,14 +33,14 @@ ul {
 
   a {
     width: 100%;
-    border-bottom: 2px solid gray;
+    border-bottom: 2px solid #D9D9D9;
     padding: 1rem;
     transform: translateX(0);
     transition: 0.5s;
   }
 
   .intro {
-    border-top: 2px solid gray;
+    border-top: 2px solid #D9D9D9;
   }
 
   a:hover {
@@ -55,8 +55,8 @@ ul {
 
 }
 
-section {
-  border: 1px solid gray;
+footer {
+  border: 1px solid #D9D9D9;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -68,8 +68,8 @@ section {
   z-index: 9;
 
   img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 2rem;
+    height: 2rem;
     border-radius: 50%;
     object-fit: cover;
     object-position: top;

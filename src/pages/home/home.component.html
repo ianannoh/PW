@@ -1,6 +1,24 @@
 <section>
 
-  <ng-container *ngFor="let p of projects">
+  <ng-container *ngFor="let p of systemProjects">
+    <a [routerLink]="p.route">
+      <div class="box">
+        <img [src]="p.img1" alt="" class="main">
+
+        <div class="container">
+          <img [src]="p.img2" alt="">
+
+          <div class="info">
+            <h5>{{p.header}}</h5>
+            <p>{{p.date}}</p>
+            <p>{{p.type}}</p>
+          </div>
+        </div>
+      </div>
+    </a>
+  </ng-container>
+
+  <ng-container *ngFor="let p of websiteProjects">
     <a [href]="p.route" target="_blank" rel="noopener">
       <div class="box">
         <img [src]="p.img1" alt="" class="main">
