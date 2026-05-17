@@ -1,16 +1,88 @@
 <section>
- <ng-container *ngFor="let s of skills">
+  <div class="heading">
+    <h2>What I Build With</h2>
 
-<!--   <a href="">-->
-     <div class="container">
-       <img [src]="s.img" alt="">
+    <p>A concise snapshot of my professional toolkit</p>
+  </div>
 
-       <div>
-         <p class="header">{{s.name}}</p>
-         <p>{{s.type}}</p>
-       </div>
-     </div>
-<!--   </a>-->
+  <div>
+      <h6>LANGUAGES</h6>
 
- </ng-container>
+    <div class="container">
+      @for (s of languages; track s.name) {
+        <div>
+          <img [src]="s.img" alt="{{s.name}} image">
+
+          <small>{{s.name}}</small>
+        </div>
+      }
+    </div>
+
+  </div>
+
+  <div>
+    <h6>FRONTEND</h6>
+
+    <div class="container">
+      @for (s of frontend; track s.name) {
+        <div>
+          <img [src]="s.img" alt="{{s.name}} image">
+
+          <small>{{s.name}}</small>
+        </div>
+      }
+    </div>
+
+
+  </div>
+
+  <div>
+    <h6>BACKEND</h6>
+
+    <div class="container">
+      @for (s of backend; track s.name) {
+        <div>
+          <img [src]="s.img" alt="{{s.name}} image">
+
+          <small>{{s.name}}</small>
+        </div>
+      }
+    </div>
+
+
+  </div>
+
+  <div>
+    <h6>DATABASES</h6>
+
+    <div class="container">
+      @for (s of database; track s.name) {
+        <div>
+          <img [src]="s.img" alt="{{s.name}} image">
+
+          <small>{{s.name}}</small>
+        </div>
+      }
+    </div>
+
+
+  </div>
+
+  <div>
+    <h6>PRACTICES</h6>
+
+    <div class="container">
+      @for (s of practices; track s.name) {
+        <div>
+          <img [src]="s.img" alt="{{s.name}} image">
+
+          <small>{{s.name}}</small>
+        </div>
+      }
+    </div>
+
+
+  </div>
 </section>
+
+

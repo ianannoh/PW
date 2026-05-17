@@ -1,20 +1,46 @@
 <section>
-  <div>
+  <h2>Let's talk.</h2>
+
+  <p>The quickest ways to reach me.</p>
+
+  <div class="container">
     <a target="_blank" rel="noopener" href="mailto: ianannoh32@icloud.com">
-      <img src="/assets/contact/email-opened-svgrepo-com.svg" alt="email-icon">
-    </a>
-  </div>
+      <img class="icon" src="/assets/contact/email.svg" alt="email icon">
 
-  <div>
-    <a target="_blank" rel="noopener" href="https://www.linkedin.com/in/ian-annoh-a274b1351?utm_source=share_via&utm_content=profile&utm_medium=member_ios">
-      <img src="/assets/contact/linkedin-color-svgrepo-com.svg" alt="linkedin-icon">
-    </a>
-  </div>
+      <div>
+        <p>EMAIL</p>
 
-  <div>
-    <a target="_blank" rel="noopener" href="https://www.instagram.com/ianannoh/">
-      <img src="/assets/contact/instagram-2-1-logo-svgrepo-com.svg" alt="instagram-icon">
+        <h6>ianannoh32&#64;icloud.com</h6>
+      </div>
+
+      <img class="right-arrow" src="/assets/contact/right-arrow.svg" alt="">
     </a>
+
+    <a target="_blank" rel="noopener" href="tel: +233 54 720 6496">
+      <img class="icon" src="/assets/contact/phone.svg" alt="phone icon">
+
+      <div>
+        <p>PHONE</p>
+
+        <h6>+233 54 720 6496</h6>
+      </div>
+
+      <img class="right-arrow" src="/assets/contact/right-arrow.svg" alt="">
+    </a>
+
+    @for (c of contacts; track c.id) {
+      <a target="_blank" rel="noopener" [href]="c.url">
+        <img class="icon" [src]="c.image" alt="{{c.field}} icon">
+
+        <div>
+          <p>{{c.field}}</p>
+
+          <h6>{{c.name}}</h6>
+        </div>
+
+        <img class="right-arrow" src="/assets/contact/right-arrow.svg" alt="">
+      </a>
+    }
   </div>
 
 </section>
