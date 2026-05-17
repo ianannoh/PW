@@ -83,7 +83,7 @@ footer {
     height: 2rem;
     object-fit: cover;
     object-position: top;
-    margin-right: 1rem;
+    margin-inline: auto;
   }
 }
 

@@ -2,7 +2,7 @@ section {
   width: 100%;
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .box {
@@ -85,6 +85,11 @@ section {
 
 
 @media (min-width: 737px) and (max-width: 1080px) {
+  section {
+    row-gap: 4rem;
+    column-gap: 2rem;
+  }
+
   .box {
     .main {
       height: 10rem;
@@ -92,10 +97,6 @@ section {
 
     .container {
       padding: 0.5rem 0;
-      /*img {*/
-      /*  height: 3rem;*/
-      /*  width: 3rem;*/
-      /*}*/
     }
   }
 }
