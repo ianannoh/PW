@@ -61,5 +61,16 @@ a:hover {
   section {
     width: 100%;
   }
+
+  a:hover {
+    .icon {
+      transform: rotate(0);
+    }
+
+    .right-arrow {
+      animation: none;
+    }
+  }
+
 }
 
