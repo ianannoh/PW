@@ -37,6 +37,11 @@ export class SkillsComponent {
       type: "Backend Framework",
     },
     {
+      img: "/assets/skills/typeScript-logo.svg",
+      name: "TypeScript",
+      type: "Programming Language",
+    },
+    {
       img: "/assets/skills/mongodb-icon.svg",
       name: "MongoDB",
       type: "Database",
