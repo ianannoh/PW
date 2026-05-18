@@ -57,7 +57,7 @@ export class HomeComponent {
 
   protected systemProjects: IProjects[] = [
     {
-      img1: "/assets/home/vitals-bg.webp",
+      img1: "/assets/home/VDT-CMS-2.png",
       img2: "/assets/home/vdt-logo.svg",
       header: "Vandzilah Technology Website CMS",
       date: "April, 2026",
@@ -67,7 +67,7 @@ export class HomeComponent {
     {
       img1: "/assets/home/ggrs-bg.webp",
       img2: "/assets/home/ggrs-logo.svg",
-      header: "Ghana Gun Registry Service (GGRS)",
+      header: "Ghana National Arms Management Portal (GNAPS)",
       date: "November, 2025",
       route: "/projects/ggrs",
       type: "Legal & Regulatory Tech",

@@ -45,6 +45,7 @@ a:hover {
 
 .right-arrow {
   margin-left: auto;
+  margin-right: 1rem;
 }
 
 @keyframes slide {
