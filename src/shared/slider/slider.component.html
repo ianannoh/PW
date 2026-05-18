@@ -1,0 +1,12 @@
+<section>
+  <div class="slider-track" [style.transform]="getTransform()">
+    @for (i of images; track i) {
+      <img class="main-img" [src]="i" alt="">
+    }
+  </div>
+
+  <div class="buttons">
+    <img (click)="prev()" class="left-arrow" src="/assets/contact/right-arrow.svg" alt="">
+    <img (click)="next()" class="right-arrow" src="/assets/contact/right-arrow.svg" alt="">
+  </div>
+</section>

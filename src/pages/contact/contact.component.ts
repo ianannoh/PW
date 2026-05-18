@@ -16,6 +16,13 @@ interface IContact {
 export class ContactComponent {
   protected contacts: IContact[] = [
     {
+      id: 4,
+      field: 'GITHUB',
+      name: 'github.com/ianannoh',
+      url: 'https://github.com/ianannoh',
+      image: '/assets/home/github-logo.png',
+    },
+    {
       id: 2,
       field: 'LINKEDIN',
       name: 'linkedin.com/in/ianannoh',
