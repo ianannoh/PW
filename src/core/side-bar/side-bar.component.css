@@ -29,6 +29,7 @@ nav {
     width: 7rem;
     margin-top: auto;
     margin-inline: auto;
+    object-fit: contain;
   }
 }
 
@@ -81,8 +82,7 @@ footer {
   img {
     width: 2rem;
     height: 2rem;
-    object-fit: cover;
-    object-position: top;
+    object-fit: contain;
     margin-inline: auto;
   }
 }

@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {NgForOf} from '@angular/common';
 
 interface ISkills {
   img: string;
@@ -9,7 +8,6 @@ interface ISkills {
 @Component({
   selector: 'app-skills',
   imports: [
-    NgForOf
   ],
   templateUrl: './skills.component.html',
   styleUrl: './skills.component.css'
