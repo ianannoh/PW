@@ -69,6 +69,11 @@ export class SkillsComponent {
 
   protected database: ISkills[] = [
     {
+      img: "/assets/skills/Postgresql_elephant.webp",
+      name: "PostgreSQL",
+      type: "Database",
+    },
+    {
       img: "/assets/skills/mongodb-icon.svg",
       name: "MongoDB",
       type: "Database",
