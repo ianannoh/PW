@@ -274,6 +274,7 @@ Works out of the box with GitHub Pages, Netlify, Vercel, Cloudflare Pages, or Fi
 
 ---
 
-## License
+[//]: # (## License)
 
-Not specified. Add a `LICENSE` file before publishing publicly.
+[//]: # ()
+[//]: # (Not specified. Add a `LICENSE` file before publishing publicly.)
